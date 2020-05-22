@@ -1,4 +1,60 @@
 @charset "UTF-8";
 
-#assistive-gesture {
+.assistive-gesture-container {
+  box-sizing: border-box;
+
+  .assistive-gesture-menu {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    //background-color: rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    bottom: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 0.3;
+    transition: opacity .7s;
+    .assistive-gesture-item {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      .assistive-gesture-item-icon {
+        display: block;
+      }
+    }
+  }
+
+  .assistive-gesture-joystick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    border-radius: 50%;
+    touch-action: none;
+    cursor: grab;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    &:active {
+      background: red;
+    }
+  }
+
+  &.active {
+    .assistive-gesture-menu {
+      width: 100px;
+      height: 100px;
+      margin: -50px -50px;
+      padding: 6px;
+      opacity: 1;
+    }
+  }
+
 }

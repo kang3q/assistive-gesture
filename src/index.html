@@ -5,13 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>assistive-gesture</title>
   <style>
-    body {
-      padding: 0;
-      margin: 0;
-    }
+  	html, body {height: 200%;}
+    body {padding: 0; margin: 0;}
   </style>
 </head>
 <body>
-  <div id="assistive-gesture"></div>
+<div id="assistive-gesture">
+  <!--
+  <div class="assistive-gesture-container">
+      <div class="assistive-gesture-menu">
+        <span class="assistive-gesture-joystick"></span>
+        <span class="assistive-gesture-item" style="transform: translate(-11px, -58px);">
+          <span class="assistive-gesture-item-icon">😴</span>
+          <label>top</label>
+        </span>
+        <span class="assistive-gesture-item" style="transform: translate(22px, -27px);">
+          <span class="assistive-gesture-item-icon">🖐</span>
+          <label>right</label>
+        </span>
+        <span class="assistive-gesture-item" style="transform: translate(-25px, 12px);">
+          <span class="assistive-gesture-item-icon">🍟</span>
+          <label>bottom</label>
+        </span>
+        <span class="assistive-gesture-item" style="transform: translate(-49px, -23px);">
+          <span class="assistive-gesture-item-icon">🙋</span>
+          <label>left</label>
+        </span>
+      </div>
+    </div>
+  -->
+</div>
+
+<script>
+  var ag = new AssistiveGesture('assistive-gesture').init()
+</script>
+
 </body>
 </html>
