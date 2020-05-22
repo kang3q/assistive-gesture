@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'assistive-gesture.js',
-    library: 'AssistiveGesture',
+    //library: 'AssistiveGesture',
     libraryTarget: 'umd',
   },
   devServer: {
